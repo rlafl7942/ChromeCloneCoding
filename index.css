@@ -1,0 +1,12 @@
+body {
+  color: rgb(17, 0, 49);
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
