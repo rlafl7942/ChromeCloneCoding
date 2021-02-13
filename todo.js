@@ -41,7 +41,7 @@ function paintToDo(text) {
   toDoList.appendChild(li);
   const toDoObj = {
     text: text,
-    id: newId, //처음에 배열 비어있으니 id:1
+    id: newId,
   };
   toDos.push(toDoObj); //배열에 집어넣기
   saveToDos(); //push한 후에 호출하기
@@ -64,7 +64,7 @@ function handleSubmit(event) {
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
   if (loadedToDos !== null) {
-    const parsedToDos = JSON.parse(loadedToDos);
+    const parsedToDos = JSON.parse(loadedToDos); //object로 변환
     parsedToDos.forEach(function (toDo) {
       //함수 안의 것들을 한번씩 다 실행시켜준다.
       //함수 안의 것들을 함수의 인자인 toDo로 보내줌
