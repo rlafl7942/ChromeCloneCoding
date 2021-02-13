@@ -6,23 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Something</title>
     <link rel="stylesheet" href="index.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,600&display=swap');
+        *{
+            font-family:'Newsreader', serif;
+        }
+    </style>
 </head>
 <body>
+    <section>
     <div class="js-clock">
         <h1>00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
-    </form>
+    <div class="name">
+        <form class="js-form form">
+            <input id="name" type="text" placeholder="What is your name?" />
+        </form>
+    </div>
     <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do"/>
-    </form>
-    <ul class="js-toDoList">
-        
-    </ul>
+    <div class="toDo">
+        <form class="js-toDoForm">
+            <input id="todo" type="text" placeholder="Write a to do :-)"/>
+        </form>
+    </div>
+    <div class="toDolist">
+        <ul class="js-toDoList"></ul>
+    </div>
+    <span class="js-weather"></span>
+    </section>
+    
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
